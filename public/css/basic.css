@@ -1,0 +1,235 @@
+/**====================页面通用样式/css样式重写==========================**/
+body{
+    font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+    color:#603723;
+    margin:0 auto;
+    background: #fff;
+}
+h1,h2,h3,h4,h5,h6,ul,p,dl,dd{margin:0;padding:0;list-style:none;}
+img{vertical-align: bottom;}
+a{text-decoration: none!important;color:#603723;}
+a:hover{color:#F3AC20;}
+.lf{float:left;}
+.rt{float:right;}
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*宽度*/
+.long{width:1024px;}
+/*居中*/
+.mid{margin:0 auto;}
+.f15{font-size: 15px;}
+.f25{font-size: 25px;}
+.sp{padding-top:5px;}
+/*====================================页头===========================================================*/
+/*****头部*****/
+
+/*头部整体布局 */
+#header{
+    /*宽度，高度，固定定位 z-index*/
+    width:100%;
+    height:98px;
+    position:fixed;
+    z-index: 1000;
+    /*padding:0 400px;*/
+    border-bottom:1px solid #F3AC20;
+    box-sizing: border-box;
+    background:#fff;
+}
+
+/*****左边信息，中间导航*****/
+
+/*高度(bootstrap里设置了.nav的高度)*/
+#header>ul>li.info{height:97px !important;position:relative}
+/*****中间导航*****/
+#header>ul>li.nav{padding-left:5px;}
+/***中间导航：上弹出框***/
+#header>ul>li.nav li.city{
+    /*配合城市下拉框绝对定位*/
+    position:relative;
+    padding-top: 10px;
+    padding-left:140px;
+}
+#header>ul>li.nav li.city>div{padding :10px 40px;}
+/**城市==合肥样式**/
+#header>ul>li.nav li.city a{
+    /*内边距，背景颜色，字体颜色，加粗，边框倒角*/
+    padding:3px 15px;
+    background:#8C6A51;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/**城市的下拉框**/
+
+#header>ul>li.nav li.city>div.drop-down1{
+    /*宽度，高度，边框，绝对定位，top，left， 隐藏*/
+    width:228px;
+    height:90px;
+    position:absolute;
+    top:45px;
+    left:180px;
+    display:none;
+    background:#ddd;
+    border-radius:5px;
+}
+#header>ul>li.nav li.city>div.drop-down1 a{background:#fff; color:#8C6A51;}
+#header>ul>li.nav li.city>div.drop-down1 a:hover{color:#fff;background:#8C6A51;}
+#header>ul>li.nav li.city>div.drop-down1>a{margin:0 5px;}
+/*悬浮显示下拉框*/
+#header>ul>li.nav li.city:hover div.drop-down1{
+    display:block;
+}
+/***中间导航：下导航***/
+
+#header>ul>li.nav ul.navLists>li span{
+    /*li 内边距，宽度，文本居中*/
+    display:block;
+}
+#header>ul>li.nav ul.navLists>li{
+    display:block;
+    width:125px;
+    height:51px;
+    margin:0 15px;
+    box-sizing:border-box;
+    text-align: center;
+    font-size:14px;
+}
+#header>ul>li.nav ul.navLists>li:hover{
+    border-bottom: 2px solid #F3AC20;
+}
+/*激活样式*/
+#header>ul>li.nav ul.navLists>li.active{
+    border-bottom: 2px solid #F3AC20;
+}
+#header>ul>li.nav ul.navLists>li>a.active{
+    color: #F3AC20;
+}
+/***品牌故事，唯品客家下拉框***/
+/*配合绝对定位的父元素的相关操作*/
+#header>ul>li.nav ul.navLists>li.box-2,#header>ul>li.nav ul.navLists>li.box-3{
+    position:relative;
+}
+#header>ul>li.nav ul.navLists>li.box-2>div.drop-down2,#header>ul>li.nav ul.navLists>li.box-3>div.drop-down3{
+    width:100px;
+    height:152px;
+    position:relative;
+    top:14px;
+    left:14px;
+}
+#header>ul>li.nav ul.navLists>li.box-3>div.drop-down3{height:120px;}
+#header>ul>li.nav ul.navLists>li.box-2>div.drop-down2 li
+,#header>ul>li.nav ul.navLists>li.box-3>div.drop-down3 li{
+    /*字体颜色，大小，上边框，内边距*/
+    font-size: 13px;
+    border-top:1px solid #E6E1DB;
+    padding:10px 0;
+    display:none;
+}
+#header>ul>li.nav ul.navLists>li.box-2>div.drop-down2 li>a
+,#header>ul>li.nav ul.navLists>li.box-3>div.drop-down3 li>a
+{color:#F3AC20;}
+#header>ul>li.nav ul.navLists>li.box-2>div.drop-down2 li>a:hover
+,#header>ul>li.nav ul.navLists>li.box-3>div.drop-down3 li>a:hover
+{color:#333;}
+
+#header>ul>li.nav ul.navLists>li.box-2:hover div.drop-down2 li,#header>ul>li.nav ul.navLists>li.box-3:hover div.drop-down3 li{
+    display:block;
+}
+/***左边相关信息***/
+#header>ul>li.info{position:relative;left:800px;top:-93px;}
+#header>ul>li.info>ul{height:97px;}
+#header>ul>li.info>ul>li.car{height:35px;}
+li.car{height:30px;line-height:30px;}
+#header>ul>li.info>ul{width:290px;}
+#header>ul>li.info li.nav_r li{padding-right: 5px;}
+#header>ul>li.info li.nav_r li b{margin-left:5px;}
+#header>ul>li.info li.tel img{margin:5px 0;}
+/*侧边qq*/
+#header>ul.qq{
+    /*固定定位*/
+    position:fixed;
+    right:0px;
+    top:220px;
+    width:54px;
+    /*height:54px;*/
+}
+#header>ul.qq>li{
+    position: relative;
+    height:54px;
+}
+#header>ul.qq>li>a>p{
+    position:absolute;
+    top:0;
+    left:0;
+    width:140px;
+    overflow: hidden;
+    background:#685247;
+    color:#685247;
+    transition:all .6s;
+    border:1px solid transparent;
+}
+#header>ul.qq>li>a>p:hover{
+    /*宽度，背景颜色*/
+    background:#603721;
+    opacity:0.7;
+    border:1px solid #444;
+    color:#fff;
+    font-size:16px;
+    left:-86px;
+}
+#header>ul.qq>li>a>p>img{vertical-align: middle !important;}
+#header>ul.qq>li>a>img{
+    background:#685247;
+}
+/**解决头部固定定位**/
+#main{padding-top: 98px;width:1024px; margin:0 auto;}
+/*============布局不太好，改为ul ==================*/
+/*li左浮动*/
+/*#header>div.navs li,#header>div.info li{float:left;}
+/*****头部中间导航部分*****/
+/*#header div.nav{padding:20px 0;}
+/*****头部中间导航部分上*****/
+/*#header div.cities{margin-left:40px;}
+/*内边距，字体颜色，加粗，背景颜色 边框倒角*/
+/*#header div.city a{padding:5px 20px;color:#fff;font-weight: bold;background: #8C6A51;border-radius: 5px;}
+/*****头部中间导航部分下*****/
+/*宽度，高度，文本居中*/
+/*#header div.navs li{width:先给定每个部分的尺寸，尽量用百分比定义子元素的尺寸}
+/*#main{margin-top:97px;}*/
+
+
+
+/*====================================页尾===========================================================*/
+#bottom{
+    width:100%;
+    border-top:1px solid #F3AC20;
+    margin-top:20px;
+}
+#footer{background:#F2F2F2; height:250px;}
+/**相关链接**/
+#container>ul{margin-top:20px;}
+#container>ul.ulr{border-right:1px solid #ddd;}
+#container>ul>li{
+   /*宽度，高度 line-height 文本居中*/
+    width:113px;
+    height:35px;
+    line-height:35px;
+    text-align:left;
+    padding:10px 0 10px 30px;
+}
+#container>ul>li:first-child{padding-left:35px;}
+#container>ul>li>span.glyphicon{
+    background:#979797;
+    padding:5px 7px ;
+    border-radius:3px;
+    color:#fff;
+}
+#container>ul>li a:hover{text-decoration: underline !important;
+}
+#container>ul>li a.active{color:#CC6600;}
+#container img{margin:52px 20px 10px 42px;}
+#container dd{padding-left:90px;}
+#footer-text{padding:20px 0 0 32px;}

@@ -1,0 +1,24 @@
+#main>div.login{
+    width:500px;
+    height:300px;
+    margin:120px auto;
+    border:5px solid #6C3A01;
+    border-top-left-radius:80px;
+    border-bottom-right-radius: 80px;
+    padding:50px 0  0 140px;
+    font-size:15px;
+}
+h3{padding: 0 0 15px 40px;}
+h3 span{padding-right:20px;}
+p{
+    margin:10px 0;
+    width:224px;
+}
+button{
+    padding:5px 60px;
+    background:#B0916A;
+    border:none;
+    border-radius:3px;
+    margin-left:48px;
+}
+#msg{font-weight: normal;font-size:10px;color:red;}

@@ -1,0 +1,181 @@
+#main{
+    /*height:2000px;*/
+    margin:0 auto;
+    padding-top:160px;
+}
+#cart{
+    width:900px;
+    /*border:1px solid #ddd;*/
+    text-align: center;
+}
+body{
+     background:#fff;
+ }
+
+#cart a{
+    color:#666;
+}
+#cart a:hover{
+    text-decoration:none;
+    color:#666;
+}
+#cart a:focus{
+    text-decoration: none;
+}
+.shopping-top{
+    width:1024px;
+    margin:0 auto;
+}
+.shopping-top>a>img{
+    vertical-align: middle;
+}
+.shopping-top>ul{
+    float:right;
+}
+.shopping-top>ul>li{
+    float:left;
+    margin-left:20px;
+}
+.shopping-top>ul img{
+    width:30px;
+    border-radius:50%;
+    vertical-align: middle;
+}
+.shopping-top>ul>li:nth-child(3)>a:last-child{
+    display:inline-block;
+    width:15px;
+    font-size:15px;
+    border-radius:50%;
+    background:red;
+    text-align:center;
+    line-height:15px;
+    color:#fff;
+    position:relative;
+    top:-6px;
+    left:-7px;
+}
+
+
+/*//设置购物列表中的属性*/
+#cart
+{
+    width:900px;
+    border-top:2px solid #7E2E0A;
+    background-color: #fcfffa;
+    margin:40px auto;
+    border-collapse: collapse;
+}
+
+#cart td,#cart th{
+    border-top:1px solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
+    padding:10px;
+    vertical-align:middle;
+    text-align:center;
+}
+#cart thead input{
+    vertical-align: middle;
+}
+#tb1 img{
+    width:60px;
+}
+#tb1 tr{
+    height:100px;
+    line-height:100px;
+}
+#tb1 td:nth-child(4)>input{
+    vertical-align: middle;
+    width:50px;
+    height:25px;
+    border:none;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+#tb1 td:nth-child(4)>button{
+    height:25px;
+    vertical-align: middle;
+    line-height:20px;
+}
+#tb1 td:nth-child(4)>button:first-child{
+    position:relative;
+    left:5px;
+}
+#tb1 td:nth-child(4)>button:last-child{
+    position:relative;
+    left:-5px;
+}
+
+#tb1 tr:hover{
+    background:#D1EAF0;
+    opacity:0.6;
+}
+
+#footer{
+    width:100%;
+    background:#fff;
+    height:auto;
+}
+#footer>div{
+    width:1024px;
+    margin:0 auto;
+    border-top:1px solid #ddd;
+    padding-top:40px;
+    color:#76838F;
+}
+
+
+#pay{
+    text-align:right;
+    padding-top:60px;
+    padding-right:88px;
+}
+#pay>p{
+    display:inline-block;
+    margin-left:50px;
+}
+#pay>p:first-child>span{
+    color: #F96868;
+    font-size:25px;
+}
+#pay>p:last-child>a{
+    padding:5px 10px;
+    background:#F96868;
+    color:#fff;
+    font-size:15px;
+    border:none;
+    border-radius:3px;
+}
+/*模态框*/
+#modal{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#717171;
+    opacity:0.8;
+    display:none;
+}
+div.box_info{
+    /*居中*/
+    position:fixed;
+    z-index: 2000;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /*样式*/
+    width:200px;
+    height:100px;
+    border:8px solid #341708;
+    border-radius: 5px;
+    background:#fff;
+    color:#fff;
+    opacity:1;
+
+}
+div.box_info>h2{
+    text-align: center;
+    line-height: 80px;
+    color:#603723;
+}

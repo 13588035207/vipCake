@@ -1,0 +1,52 @@
+
+/******唯品见证*******/
+#main>div.navigator{padding:40px 0 30px 5px;}
+#main>div.navigator>a{float:left;}
+#main p{
+    /*padding-left:60px;*/
+    font-size:25px;
+    font-weight:200;
+    /*font-style: italic;*/
+    line-height:40px;
+}
+
+/*****品牌新闻*****/
+#main div.first li{
+    font-size:16px;
+    font-weight:bold;
+    height:35px;
+    line-height:35px;
+}
+#main div.first li>a{
+    font-size:13px;
+    font-weight:normal;
+}
+#main div.first p{
+    height:35px;
+    line-height:35px;
+    font-size:16px;
+}
+#main dl{
+    padding:20px 0 10px 0;
+    border-bottom:1px dashed #ddd;
+}
+#main dl>dt,#main dl>dd{
+    color:#A2A2A2;
+    font-size:13px;
+    line-height:25px;
+}
+#main span.date{
+    color:#666666;
+}
+#main div.page>div:last-child{
+    text-align: center;
+    padding:20px 0 50px 0;
+}
+#main div.page>div:last-child>input{
+    width:30px;
+    text-align: center;
+    background:#603723;
+    color:#fff;
+    border:1px solid #603723;
+}
+#main dl span,#main dl a{color:#B57A2C;}

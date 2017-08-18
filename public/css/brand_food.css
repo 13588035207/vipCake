@@ -1,0 +1,9 @@
+#main div.navigator,#main p{padding:50px 0;}
+p.topic{
+    margin:50px 0 10px 0;
+    font-size:20px;
+}
+p.text_content{
+    line-height:20px;
+    margin:15px 0;
+}

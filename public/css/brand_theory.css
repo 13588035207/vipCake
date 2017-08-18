@@ -1,0 +1,4 @@
+div.navigator{padding:50px 0;}
+p.second{padding:15px 0;line-height:20px;}
+ul.pic_1{height:240px;}
+ul.pic_1>li:nth-child(2)>img{padding: 0 9px;}

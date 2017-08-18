@@ -1,0 +1,48 @@
+
+/******栅格布局*******/
+/*第一行：导航*/
+#main div.first a{display:inline-block;padding:40px 0;}
+/*第二行*/
+    /*左侧*/
+#main div.second li{font-size:16px;font-weight:bold; height:35px;line-height:35px;}
+#main div.second li>a{font-size:13px;font-weight:normal;}
+    /*右侧*/
+#main div.second p{height:35px;line-height:35px;font-size:16px;}
+#main div.second dl{
+    position:relative;
+    height:140px;
+    margin-top:35px;
+    border-bottom:1px dashed #ddd;
+    box-sizing:border-box;
+}
+#main div.second dl>dd{
+    font-size:13px;
+    position:absolute;
+    top:0;
+    left:145px;
+    line-height:20px;
+    color:#A2A2A2;
+}
+#main div.second dl>dd a,#main div.other a,#main div.other span{
+    color:#B57A2C;
+}
+#main div.other span.date,#main div.second dl>dd span{color:#666666;}
+/*第三行以及以后*/
+#main div.other{
+    font-size:13px;
+    line-height:20px;
+    color:#A2A2A2;
+}
+#main div.other>div:last-child{border-bottom:1px dashed #ddd;padding:20px 0 20px 10px;}
+/*页码*/
+#main div.page>div:last-child{
+    text-align: center;
+    padding:20px 0 50px 0;
+}
+#main div.page>div:last-child>input{
+    width:30px;
+    text-align: center;
+    background:#603723;
+    color:#fff;
+    border:1px solid #603723;
+}
